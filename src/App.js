@@ -1,14 +1,19 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
+import Header from './Components/Header/Header'
+import Navbar from './Components/Navbar/Navbar'
+import Posts from './Components/Posts/Posts'
+import './App.css'
 
-import "./App.css";
-
-function App() {
-  return (
-    <div className="App">
-      <div>New react App.</div>
-      <div>Update from sandbox</div>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <Header />
+                <Navbar />
+                <Posts />
+            </div>
+        )
+    }
 }
 
-export default App;
+export default App
