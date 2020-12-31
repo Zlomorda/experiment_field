@@ -7,10 +7,14 @@ class Navbar extends Component {
         return (
             <div className="Navbar">
                 <div className={style.item}>
-                    <NavLink to="/posts">Posts</NavLink>
+                    <NavLink to="/posts" activeClassName={style.active}>
+                        Posts
+                    </NavLink>
                 </div>
                 <div className={style.item}>
-                    <NavLink to="/dialogs">Dialogs</NavLink>
+                    <NavLink to="/dialogs" activeClassName={style.active}>
+                        Dialogs
+                    </NavLink>
                 </div>
                 <div className={style.item}>Music</div>
                 <div className={style.item}>Index</div>

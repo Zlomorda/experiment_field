@@ -28,3 +28,7 @@ body {
     background-color: rgb(126, 160, 93);
     grid-area: main;
 }
+
+a .active {
+    color: black;
+}
