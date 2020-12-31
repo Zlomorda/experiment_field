@@ -11,6 +11,7 @@ class Post extends Component {
                     alt="Avatar"
                 />
                 {this.props.message}
+                <div>Likes: {this.props.likes}</div>
             </div>
         )
     }

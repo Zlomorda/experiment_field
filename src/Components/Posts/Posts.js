@@ -17,9 +17,9 @@ class Posts extends Component {
                 <br />
                 <button>Send Message</button>
                 <div>
-                    <Post message="Hi all!!" />
-                    <Post message="Whats going on?" />
-                    <Post message="Somebody there?" />
+                    <Post message="Hi all!!" likes={5} />
+                    <Post message="Whats going on?" likes={10} />
+                    <Post message="Somebody there?" likes={18} />
                 </div>
             </div>
         )
