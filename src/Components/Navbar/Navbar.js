@@ -6,7 +6,7 @@ class Navbar extends Component {
         return (
             <div className="Navbar">
                 <div className={style.item}>
-                    <a href="/">Posts</a>
+                    <a href="/posts">Posts</a>
                 </div>
                 <div className={style.item}>
                     <a href="/dialogs">Dialogs</a>
