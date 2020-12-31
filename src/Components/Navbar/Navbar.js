@@ -5,9 +5,13 @@ class Navbar extends Component {
     render() {
         return (
             <div className="Navbar">
-                <div className={style.item}>Home</div>
-                <div className={style.item}>Posts</div>
-                <div className={style.item}>Messages</div>
+                <div className={style.item}>
+                    <a href="/">Posts</a>
+                </div>
+                <div className={style.item}>
+                    <a href="/dialogs">Dialogs</a>
+                </div>
+                <div className={style.item}>Music</div>
                 <div className={style.item}>Index</div>
             </div>
         )

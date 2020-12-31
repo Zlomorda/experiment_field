@@ -6,10 +6,12 @@ body {
     display: grid;
     grid-template-areas:
         'header header'
-        'navbar posts';
+        'navbar main';
     gap: 10px;
     grid-template-rows: 1fr 10fr;
     grid-template-columns: 2fr 10fr;
+    width: 1200px;
+    margin: auto;
 }
 
 .Header {
@@ -22,7 +24,7 @@ body {
     grid-area: navbar;
 }
 
-.Posts {
-    background-color: rgb(219, 247, 191);
-    grid-area: posts;
+.Main {
+    background-color: rgb(126, 160, 93);
+    grid-area: main;
 }

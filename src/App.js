@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from './Components/Header/Header'
 import Navbar from './Components/Navbar/Navbar'
 import Posts from './Components/Posts/Posts'
+import Dialogs from './Components/Dialogs/Dialogs'
 import './App.css'
 
 class App extends Component {
@@ -10,7 +11,10 @@ class App extends Component {
             <div className="App">
                 <Header />
                 <Navbar />
-                <Posts />
+                <div className="Main">
+                    {/* <Posts /> */}
+                    <Dialogs />
+                </div>
             </div>
         )
     }
