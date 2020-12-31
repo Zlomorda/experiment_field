@@ -5,8 +5,11 @@ class Header extends Component {
     render() {
         return (
             <div className="Header">
-                <div>Header Section</div>
-                <div>Under construction</div>
+                <img
+                    className={style.img}
+                    alt="header"
+                    src="https://www.rachip.com/wp-content/uploads/2016/08/icon-hardware.png"
+                />
             </div>
         )
     }

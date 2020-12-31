@@ -5,8 +5,10 @@ class Navbar extends Component {
     render() {
         return (
             <div className="Navbar">
-                <div>NavBar Section</div>
-                <div>Will be froom left</div>
+                <div className={style.item}>Home</div>
+                <div className={style.item}>Posts</div>
+                <div className={style.item}>Messages</div>
+                <div className={style.item}>Index</div>
             </div>
         )
     }
