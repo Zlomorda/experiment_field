@@ -2,3 +2,7 @@
     width: 100%;
     height: 80px;
 }
+
+.messageContainer {
+    padding: 10px;
+}

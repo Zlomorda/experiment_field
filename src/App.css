@@ -22,6 +22,7 @@ body {
 .Navbar {
     background-color: rgb(185, 147, 221);
     grid-area: navbar;
+    padding: 10px;
 }
 
 .Main {

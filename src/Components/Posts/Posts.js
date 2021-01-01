@@ -11,11 +11,13 @@ class Posts extends Component {
                     src="https://ondinas.com.br/site/wp-content/themes/options/images/skins/headers/full_width/header-midnightBlue.jpg"
                     alt="Posts"
                 />
-                <div>Ava + Descriptopn</div>
-                <div>My Posts</div>
-                <textarea></textarea>
-                <br />
-                <button>Send Message</button>
+                <div className={style.messageContainer}>
+                    <div>Ava + Descriptopn</div>
+                    <div>My Posts</div>
+                    <textarea></textarea>
+                    <br />
+                    <button>Send Message</button>
+                </div>
                 <div>
                     <Post message="Hi all!!" likes={5} />
                     <Post message="Whats going on?" likes={10} />
