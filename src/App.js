@@ -14,8 +14,19 @@ class App extends Component {
           <Header />
           <Navbar />
           <div className="Main">
-            <Route path="/posts" component={Posts} />
-            <Route path="/dialogs" component={Dialogs} />
+            <Route
+              path="/posts"
+              render={() => <Posts posts={this.props.state.posts} />}
+            />
+            <Route
+              path="/dialogs"
+              render={() => (
+                <Dialogs
+                  messages={this.props.state.messages}
+                  dialogs={this.props.state.dialogs}
+                />
+              )}
+            />
           </div>
         </div>
       </BrowserRouter>

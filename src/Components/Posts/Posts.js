@@ -4,12 +4,6 @@ import style from "./Posts.module.css";
 
 class Posts extends Component {
   render() {
-    let postsData = [
-      { id: 1, post: "Hi all", likeCount: 12 },
-      { id: 2, post: "Gde vse?", likeCount: 15 },
-      { id: 3, post: "Shas vsio budet", likeCount: 1 },
-      { id: 4, post: "Ili ne budet", likeCount: 33 }
-    ];
     return (
       <div>
         <img
@@ -27,7 +21,7 @@ class Posts extends Component {
           <button>Send Message</button>
         </div>
         <div>
-          {postsData.map((post) => (
+          {this.props.posts.map((post) => (
             <Post message={post.post} likes={post.likeCount} />
           ))}
         </div>
