@@ -1,31 +1,39 @@
-import React, { Component } from 'react'
-import Post from './Post/Post'
-import style from './Posts.module.css'
+import React, { Component } from "react";
+import Post from "./Post/Post";
+import style from "./Posts.module.css";
 
 class Posts extends Component {
-    render() {
-        return (
-            <div>
-                <img
-                    className={style.img}
-                    src="https://ondinas.com.br/site/wp-content/themes/options/images/skins/headers/full_width/header-midnightBlue.jpg"
-                    alt="Posts"
-                />
-                <div className={style.messageContainer}>
-                    <div>Ava + Descriptopn</div>
-                    <div>My Posts</div>
-                    <textarea></textarea>
-                    <br />
-                    <button>Send Message</button>
-                </div>
-                <div>
-                    <Post message="Hi all!!" likes={5} />
-                    <Post message="Whats going on?" likes={10} />
-                    <Post message="Somebody there?" likes={18} />
-                </div>
-            </div>
-        )
-    }
+  render() {
+    let postsData = [
+      { id: 1, post: "Hi all", likeCount: 12 },
+      { id: 2, post: "Gde vse?", likeCount: 15 },
+      { id: 3, post: "Shas vsio budet", likeCount: 1 },
+      { id: 4, post: "Ili ne budet", likeCount: 33 }
+    ];
+    return (
+      <div>
+        <img
+          className={style.img}
+          src="https://ondinas.com.br/site/wp-content/themes/options/images/skins/headers/full_width/header-midnightBlue.jpg"
+          alt="Posts"
+        />
+        <div className={style.messageContainer}>
+          <div>Ava + Descriptopn</div>
+          <div>
+            <h3>My Posts</h3>
+          </div>
+          <textarea></textarea>
+          <br />
+          <button>Send Message</button>
+        </div>
+        <div>
+          {postsData.map((post) => (
+            <Post message={post.post} likes={post.likeCount} />
+          ))}
+        </div>
+      </div>
+    );
+  }
 }
 
-export default Posts
+export default Posts;

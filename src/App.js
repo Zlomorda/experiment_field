@@ -14,7 +14,6 @@ class App extends Component {
           <Header />
           <Navbar />
           <div className="Main">
-            <h1>Main</h1>
             <Route path="/posts" component={Posts} />
             <Route path="/dialogs" component={Dialogs} />
           </div>
