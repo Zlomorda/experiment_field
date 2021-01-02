@@ -1,26 +1,27 @@
-import React, { Component } from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
-import Header from './Components/Header/Header'
-import Navbar from './Components/Navbar/Navbar'
-import Posts from './Components/Posts/Posts'
-import Dialogs from './Components/Dialogs/Dialogs'
-import './App.css'
+import React, { Component } from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import Header from "./Components/Header/Header";
+import Navbar from "./Components/Navbar/Navbar";
+import Posts from "./Components/Posts/Posts";
+import Dialogs from "./Components/Dialogs/Dialogs";
+import "./App.css";
 
 class App extends Component {
-    render() {
-        return (
-            <BrowserRouter>
-                <div className="App">
-                    <Header />
-                    <Navbar />
-                    <div className="Main">
-                        <Route path="/posts" component={Posts} />
-                        <Route path="/dialogs" component={Dialogs} />
-                    </div>
-                </div>
-            </BrowserRouter>
-        )
-    }
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Header />
+          <Navbar />
+          <div className="Main">
+            <h1>Main</h1>
+            <Route path="/posts" component={Posts} />
+            <Route path="/dialogs" component={Dialogs} />
+          </div>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
-export default App
+export default App;
