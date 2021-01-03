@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 }
 
 .App {
@@ -7,7 +7,7 @@ body {
     grid-template-areas:
         'header header'
         'navbar main';
-    gap: 10px;
+    gap: 5px;
     grid-template-rows: 1fr 10fr;
     grid-template-columns: 2fr 10fr;
     width: 1200px;
@@ -15,21 +15,21 @@ body {
 }
 
 .Header {
-    background-color: rgb(155, 155, 255);
+    border: 1px solid grey;
     grid-area: header;
 }
 
 .Navbar {
-    background-color: rgb(185, 147, 221);
+    border: 1px solid grey;
     grid-area: navbar;
     padding: 10px;
 }
 
 .Main {
-    background-color: rgb(126, 160, 93);
+    border: 1px solid grey;
     grid-area: main;
 }
 
 a .active {
-    color: black;
+    color: gold;
 }

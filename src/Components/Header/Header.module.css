@@ -3,3 +3,7 @@
     width: 50px;
     margin: 5px;
 }
+
+.Header {
+    border: 1px solid grey;
+}

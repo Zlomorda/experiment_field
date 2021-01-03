@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import style from './Myprofile.module.css'
+
 class Myprofile extends Component {
     render() {
         return (

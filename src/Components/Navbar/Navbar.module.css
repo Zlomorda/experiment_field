@@ -1,14 +1,14 @@
 .item {
-    color: white;
+    color: grey;
 }
 
 a {
-    color: white;
+    color: grey;
     text-decoration: none;
 }
 
 .active {
-    color: black;
+    color: gold;
 }
 
 .active::before {

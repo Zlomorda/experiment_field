@@ -5,4 +5,9 @@
 
 .messageContainer {
     padding: 10px;
+    color: grey;
+}
+
+.profileContainer {
+    color: grey;
 }
