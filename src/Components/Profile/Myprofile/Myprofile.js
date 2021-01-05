@@ -10,15 +10,6 @@ class Myprofile extends Component {
                     src="https://ondinas.com.br/site/wp-content/themes/options/images/skins/headers/full_width/header-midnightBlue.jpg"
                     alt="Posts"
                 />
-                <div>
-                    <div>Ava + Descriptopn</div>
-                    <div>
-                        <h3>My Posts</h3>
-                    </div>
-                    <textarea></textarea>
-                    <br />
-                    <button>Send Message</button>
-                </div>
             </div>
         )
     }

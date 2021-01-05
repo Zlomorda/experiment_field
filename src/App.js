@@ -7,20 +7,20 @@ import Dialogs from './Components/Dialogs/Dialogs'
 import './App.css'
 
 class App extends Component {
-    render() {
-        return (
-            <BrowserRouter>
-                <div className="App">
-                    <Header />
-                    <Navbar />
-                    <div className="Main">
-                        <Route path="/posts" render={() => <Profile posts={this.props.state.posts} />} />
-                        <Route path="/dialogs" render={() => <Dialogs messages={this.props.state.messages} dialogs={this.props.state.dialogs} />} />
-                    </div>
-                </div>
-            </BrowserRouter>
-        )
-    }
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Header />
+          <Navbar />
+          <div className="Main">
+            <Route path="/posts" render={() => <Profile posts={this.props.state} dispatch={this.props.dispatch} />} />
+            <Route path="/dialogs" render={() => <Dialogs messages={this.props.state.messages} dialogs={this.props.state.dialogs} />} />
+          </div>
+        </div>
+      </BrowserRouter>
+    )
+  }
 }
 
 export default App
