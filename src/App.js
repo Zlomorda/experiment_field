@@ -14,8 +14,8 @@ class App extends Component {
           <Header />
           <Navbar />
           <div className="Main">
-            <Route path="/posts" render={() => <Profile posts={this.props.state} dispatch={this.props.dispatch} />} />
-            <Route path="/dialogs" render={() => <Dialogs messages={this.props.state.messages} dialogs={this.props.state.dialogs} />} />
+            <Route path="/posts" render={() => <Profile posts={this.props.state.profilePage} dispatch={this.props.dispatch} />} />
+            <Route path="/dialogs" render={() => <Dialogs dispatch={this.props.dispatch} dialogsPage={this.props.state.dialogsPage} />} />
           </div>
         </div>
       </BrowserRouter>
